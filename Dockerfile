@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM debian
 
 MAINTAINER Carlos Pérez-Aradros Herce <exekias@gmail.com>
 
