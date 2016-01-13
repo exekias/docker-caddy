@@ -2,7 +2,9 @@ FROM debian
 
 MAINTAINER Carlos Pérez-Aradros Herce <exekias@gmail.com>
 
-RUN apt-get install -y curl
+RUN apt-get update && apt-get install -y curl \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /caddy \
 && curl -sL -o /caddy/caddy.tar.gz "http://caddyserver.com/download/build?os=linux&arch=amd64" \
