@@ -15,7 +15,7 @@ browse
 You can use a custom Caddyfile, image uses `/Caddyfile` when running the server:
 
 ```
-docker run -t -v ./MyCaddyfile:/Caddyfile exekias/caddy
+docker run -i -t -v ./MyCaddyfile:/Caddyfile exekias/caddy
 ```
 
 ## Ports
@@ -23,5 +23,5 @@ docker run -t -v ./MyCaddyfile:/Caddyfile exekias/caddy
 By default ports 80, 443 and 2014 are exposed, you can publish them in the host:
 
 ```
-docker run -t -p 80:80 exekias/caddy
+docker run -i -t -p 80:80 exekias/caddy
 ```
