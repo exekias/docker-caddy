@@ -6,6 +6,7 @@ This image downloads latest Caddy version. By default it offers the following Ca
 
 ```
 0.0.0.0
+log
 browse
 ```
 

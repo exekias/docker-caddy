@@ -11,7 +11,7 @@ RUN mkdir /caddy \
 && chmod 755 /usr/bin/caddy \
 && rm -rf /caddy
 
-RUN echo "0.0.0.0\nbrowse" > /Caddyfile
+ADD Caddyfile /
 
 EXPOSE 2015
 EXPOSE 443
