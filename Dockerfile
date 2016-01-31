@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y curl \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /caddy \
-&& curl -sL -o /caddy/caddy.tar.gz "http://caddyserver.com/download/build?os=linux&arch=amd64" \
+&& curl -sL -o /caddy/caddy.tar.gz "https://caddyserver.com/download/build?os=linux&arch=amd64" \
 && tar -xf /caddy/caddy.tar.gz -C /caddy \
 && mv /caddy/caddy /usr/bin/caddy \
 && chmod 755 /usr/bin/caddy \
